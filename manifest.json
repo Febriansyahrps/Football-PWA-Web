@@ -1,0 +1,31 @@
+{
+    "name": "Chelsea Football Club",
+    "short_name": "Chelsea FC",
+    "theme_color": "#0d47a1",
+    "background_color": "#0d47a1",
+    "display": "standalone",
+    "start_url": "/index.html",
+    "description": "It's about Chelsea FC",
+    "icons": [
+        {
+            "src": "/assets/logo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/logo-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/logo-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

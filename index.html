@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chelsea FC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0d47a1">
+    </head>
+    <body>
+        <nav class="blue darken-4" role="navigation">
+            <div class="nav-wrapper container ">
+                <a href="#" class="brand-logo" id="logo-container"> Chelsea FC </a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+        <div class="container" id="content"></div>
+        <script src="js/nav.js"></script>
+        <script src="js/materialize/materialize.min.js"></script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function() {
+                    navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(function() {
+                        console.log("Pendaftaran ServiceWorker Berhasil");
+                    })
+                    .catch(function() {
+                        console.log("Pendaftaran ServiceWorker Gagal")
+                    });
+                });
+            } else {
+                console.log("ServiceWorker Belum didukung Browser ini")
+            }
+        </script>
+    </body>
+</html>
